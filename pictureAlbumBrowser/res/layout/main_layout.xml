@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	>
+
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="top"
+	    android:text="请点击下面图片" />
+
+<!-- 定义一个GridView组件 -->
+
+	<GridView
+	    android:id="@+id/grid"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:horizontalSpacing="1pt"
+	    android:numColumns="5"
+	    android:verticalSpacing="1pt" >
+	</GridView>
+
+<LinearLayout 	
+    android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal">
+<!-- 定义一个ImageView组件 -->
+<ImageView android:id="@+id/imageView"
+	android:layout_width="120dp"
+	android:layout_height="120dp"
+	android:layout_gravity="center_horizontal"
+	/>	
+<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="--------" />
+<!-- 定义一个ImageSwitcher组件  -->
+<ImageSwitcher android:id="@+id/switcher"
+	android:layout_width="120dp"
+	android:layout_height="120dp"
+	android:layout_gravity="center_horizontal"
+	android:inAnimation="@android:anim/slide_in_left"
+	android:outAnimation="@android:anim/slide_out_right"
+	/>
+</LinearLayout>
+</LinearLayout>
